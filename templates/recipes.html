@@ -11,6 +11,17 @@
         </div>
       </div>
     </div>
+    
+    <div>
+      {% for recipe in recipes %}
+      {{recipe.name}}
+      {{recipe.cuisine}}
+      {{recipe.cook_time}}
+      {{recipe.serves}}
+      {{recipe.difficulty}}
+      {{recipe.tags}}
+      {% endfor %}
+    </div>
   
   
     
