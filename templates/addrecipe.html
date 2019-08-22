@@ -18,7 +18,7 @@
   <select class="browser-default custom-select mb-4" name="cuisine">
         <option value="" disabled selected>Choose Cuisine</option>
         {% for cuis in cuisines %}
-        <option value="{{cuis.cuisines}}">{{cuis.cuisines}}</option>
+        <option value="{{cuis.cuisine}}">{{cuis.cuisine}}</option>
         {% endfor %}
     </select>
 
@@ -50,6 +50,8 @@
   <div class="form-group">
     <textarea class="form-control rounded-0" id="description" rows="3" placeholder="A brief description of the Recipe"></textarea>
   </div>
+
+
 
   <!-- Send button -->
   <div id="my_centered_buttons">
