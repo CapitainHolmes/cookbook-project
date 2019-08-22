@@ -1,17 +1,37 @@
-{% extends 'base.html' %}
-{% block content %}
-    <!--Heading-->
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-8 col-md-10 mx-auto">
-          <div class="site-heading">
-            <h1>Add Recipe</h1>
-            <hr>
-          </div>
-        </div>
+{% extends 'base.html' %} {% block content %}
+<!--Heading-->
+<div class="container">
+  <div class="row">
+    <div class="col-lg-8 col-md-10 mx-auto">
+      <div class="site-heading">
+        <h1>Add Recipe</h1>
+        <hr>
       </div>
     </div>
-  
-  
-    
+  </div>
+</div>
+
+<!-- Default form contact -->
+<form class="container text-center border border-light p-5" action="#!">
+
+  <!-- Cuisine -->
+  <select class="browser-default custom-select mb-4">
+        <option value="" selected>Choose Cuisine</option>
+        <option value="1"></option>
+    </select>
+
+  <!-- Name -->
+  <input type="text" id="name" class="form-control mb-4" placeholder="Recipe Name">
+
+  <!-- Description -->
+  <div class="form-group">
+    <textarea class="form-control rounded-0" id="description" rows="3" placeholder="A brief description of the Recipe"></textarea>
+  </div>
+
+  <!-- Send button -->
+  <button class="btn btn-info btn-block" type="submit">Add Recipe!</button>
+
+</form>
+<!-- Default form contact -->
+
 {% endblock %}
