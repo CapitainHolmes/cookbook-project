@@ -15,9 +15,9 @@
 <form class="container text-center border border-light p-5" action="" method="POST">
 
   <!-- Cuisine -->
-  <select class="browser-default custom-select mb-4" name="cusine">
+  <select class="browser-default custom-select mb-4" name="cuisine">
         <option value="" disabled selected>Choose Cuisine</option>
-        {% for cuis in cuisnes %}
+        {% for cuis in cuisines %}
         <option value="{{cuis.cuisines}}">{{cuis.cuisines}}</option>
         {% endfor %}
     </select>
