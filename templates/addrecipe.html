@@ -1,63 +1,6 @@
 {% extends 'base.html' %} {% block content %}
-<!--Heading-->
-<div class="container">
-  <div class="row">
-    <div class="col-lg-8 col-md-10 mx-auto">
-      <div class="site-heading">
-        <h1>Add Recipe</h1>
-        <hr>
-      </div>
-    </div>
-  </div>
-</div>
-
-<!--Form-->
-<form class="container text-center" action="" method="POST">
-
-  <!-- Cuisine -->
-  <select class="browser-default custom-select mb-4" name="cuisine">
-        <option value="" disabled selected>Choose Cuisine</option>
-        {% for cuis in cuisines %}
-        <option value="{{cuis.cuisine}}">{{cuis.cuisine}}</option>
-        {% endfor %}
-    </select>
-
-  <!-- Name -->
-  <input type="text" id="name" class="form-control mb-4" placeholder="Recipe Name">
-
-  <!--Cook time-->
-  <input type="text" id="cook_time" class="form-control mb-4" placeholder="Cook Time in Minutes">
-
-  <!-- Serves -->
-  <select class="browser-default custom-select mb-4" name="serves">
-        <option value="" disabled selected>How Many Poeple does it Serve</option>
-        <option value="1">1</option>
-        <option value="2">2</option>
-        <option value="3">3</option>
-        <option value="4">4</option>
-        <option value="5">5</option>
-    </select>
-
-  <!-- Difficulty -->
-  <select class="browser-default custom-select mb-4" name="difficulty">
-        <option value="" disabled selected>Level of Difficulty</option>
-        <option value="Easy">Easy</option>
-        <option value="Medium">Medium</option>
-        <option value="Hard">Hard</option>
-    </select>
-
-  <!-- Description -->
-  <div class="form-group">
-    <textarea class="form-control rounded-0" id="description" rows="3" placeholder="A brief description of the Recipe"></textarea>
-  </div>
 
 
 
-  <!-- Send button -->
-  <div id="my_centered_buttons">
-    <button class="btn btn-info btn-block" type="submit">Add Recipe!</button>
-  </div>
-
-</form>
 
 {% endblock %}

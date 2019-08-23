@@ -1,29 +1,6 @@
-{% extends 'base.html' %}
-{% block content %}
-    <!--Heading-->
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-8 col-md-10 mx-auto">
-          <div class="site-heading">
-            <h1>Recipes</h1>
-            <hr>
-          </div>
-        </div>
-      </div>
-    </div>
-    
-    <div>
-      {% for recipe in recipes %}
-      {{recipe.name}}
-      {{recipe.cuisine}}
-      {{recipe.cook_time}}
-      {{recipe.serves}}
-      {{recipe.difficulty}}
-      {{recipe.description}}
-      {{recipe.tags}}
-      {% endfor %}
-    </div>
-  
-  
-    
+{% extends 'base.html' %} {% block content %}
+
+
+
+
 {% endblock %}
