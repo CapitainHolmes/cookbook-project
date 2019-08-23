@@ -38,9 +38,6 @@ cuisine.
 
 ### The Technologies I Have Used:
 
-- **[Bootstrap](https://getbootstrap.com/docs/3.3/getting-started/)** - I have used Bootstrap for it's grid system, making my application responsive.
-- **[Boostrap Font Awesome](https://www.bootstrapcdn.com/fontawesome/)** - I have used the Bootstrap Font Awesome CDN to make use of their social icons.
-- **[Boostrap Themes](https://startbootstrap.com/themes/clean-blog/)** - I have used a premade theme for my project just so that a lot of the front end work is already done for me.
 - **[Moq Ups](https://app.moqups.com/)** - I have used MoqUps to create the mockup version of my website, that can be found **[Here.](https://github.com/CapitainHolmes/cookbook-project/tree/master/mock--ups)**
 
 ## TESTING
