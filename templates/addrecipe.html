@@ -3,7 +3,7 @@
 <h2>Add Recipe</h2>
 
 <div class="row">
-    <form action="" method="POST" class="col s12">
+    <form action="{{ url_for('insert_recipe') }}" method="POST" class="col s12">
         <div class="row">
             <div class="row">
                 <div class="input-field col s12">
@@ -49,7 +49,7 @@
                 <select id="difficulty" name="difficulty">
                   <option value="" disabled selected>Select The Difficulty</option>
                     <option value="Easy">Easy</option>
-                    <option value="Medium">Mediumm</option>
+                    <option value="Medium">Medium</option>
                     <option value="Hard">Hard</option>
                     </select>
                 <label>What is the Difficulty?</label>
