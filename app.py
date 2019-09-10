@@ -26,6 +26,7 @@ def add_recipe():
 def insert_recipe():
     recipes = mongo.db.recipes
     recipes.insert_one(request.form.to_dict())
+    tags = request.form.getlist('tags')
     return redirect(url_for('recipes'))
 
 if __name__ == '__main__':
