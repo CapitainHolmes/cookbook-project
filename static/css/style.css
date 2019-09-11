@@ -1,3 +1,10 @@
-.btn-align {
+/*ADD RECIPES PAGE*/
+
+.add_recipe_sub_head {
+    text-align: center;
+    padding-top: 100px;
+}
+
+.add_recipe_btn {
     text-align: center;
 }

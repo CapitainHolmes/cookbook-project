@@ -3,9 +3,10 @@
 <h2>Recipes</h2>
 
 <div class="row">
+    {% for recipes in recipes %}
     <div class="col s4">
         <div class="card">
-            {% for recipes in recipes %}
+
             <div class="card-image">
                 <img src="{{recipes.recipe_image}}">
             </div>
@@ -18,9 +19,10 @@
                 <a href="#">Edit Recipe</a>
                 <a href="#">Delete Recipe</a>
             </div>
-            {% endfor %}
         </div>
     </div>
+    {% endfor %}
 </div>
+
 
 {% endblock %}
