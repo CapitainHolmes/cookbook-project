@@ -31,7 +31,8 @@ def insert_recipe():
             'sevres': request.form.get('serves'),
             'difficulty': request.form.get('difficulty'),
             'description': request.form.get('description'),
-            'tags': request.form.getlist('tags')
+            'tags': request.form.getlist('tags'),
+            'recipe_image': request.form.get('recipe_image')
             }
     recipes = mongo.db.recipes
     recipes.insert_one(recipe)
