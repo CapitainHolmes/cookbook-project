@@ -6,6 +6,7 @@
     <form id='myform' action="{{ url_for('insert_recipe') }}" method="POST" class="col s12">
         <div class="row">
             <div class="row">
+                <!--CUISINE MULTIPLE SELECT-->
                 <div class="input-field col s12">
                     <i class="material-icons prefix">assignment</i>
                     <select id="cuisine" name="cuisine">
@@ -17,19 +18,21 @@
                     <label>Recipe Cuisines</label>
                 </div>
             </div>
+            <!--RECIPE NAME-->
             <div class="input-field col s12">
                 <i class="material-icons prefix">restaurant</i>
                 <input id="name" name="name" type="text">
                 <label for="icon_prefix">Recipe Name</label>
             </div>
         </div>
-
+        <!--COOK TIME-->
         <div class="row">
             <div class="input-field col s12">
                 <i class="material-icons prefix">alarm</i>
                 <input id="cook_time" name="cook_time" type="text">
                 <label for="icon_prefix">Cook Time in Minutes</label>
             </div>
+            <!--SERVES MULTIPLE SELECT-->
             <div class="input-field col s12">
                 <i class="material-icons prefix">filter_1</i>
                 <select id="cuisine" name="cuisine">
@@ -43,6 +46,7 @@
                 <label>How Many People it Serves</label>
             </div>
         </div>
+        <!--RECIPE DIFFICULTY-->
         <div class="row">
             <div class="input-field col s12">
                 <i class="material-icons prefix">equalizer</i>
@@ -54,12 +58,14 @@
                     </select>
                 <label>What is the Difficulty?</label>
             </div>
+            <!--RECIPE DESCRIPTION-->
             <div class="input-field col s12">
                 <i class="material-icons prefix">subject</i>
                 <textarea name="description" id="description" class="materialize-textarea"></textarea>
                 <label for="icon_telephone">Recipe Description</label>
             </div>
         </div>
+        <!--TAGS MULTIPLE SELECT-->
         <div class="row">
             <div class="input-field col s12">
                 <i class="material-icons prefix">format_line_spacing</i>
@@ -72,6 +78,7 @@
                 </select>
                 <label>What Tags does it Have?</label>
             </div>
+            <!--INGREDIENTS-->
             <div class="row">
                 <div class="s6 add_recipe_sub_head">
                     <h5>Ingredients & Method Guide</h5>
@@ -123,12 +130,29 @@
                     <label for="icon_prefix">Tenth Ingredient</label>
                 </div>
             </div>
+            <!--METHOD GUIDE-->
+            <div class="row">
+                <div class="input-field col s12 m4">
+                    <textarea name="method_part_one" id="method_part_one" class="materialize-textarea"></textarea>
+                    <label for="icon_telephone">Method Part One</label>
+                </div>
+                <div class="input-field col s12 m4">
+                    <textarea name="method_part_two" id="method_part_two" class="materialize-textarea"></textarea>
+                    <label for="icon_telephone">Method Part Two</label>
+                </div>
+                <div class="input-field col s12 m4">
+                    <textarea name="method_part_three" id="method_part_three" class="materialize-textarea"></textarea>
+                    <label for="icon_telephone">Method Part Three</label>
+                </div>
+            </div>
+            <!--ADD RECIPE IMAGE URL-->
             <div class="input-field col s12">
                 <i class="material-icons prefix">insert_photo</i>
                 <textarea name="recipe_image" id="recipe_image" class="materialize-textarea"></textarea>
                 <label for="icon_telephone">Please Add the Recipe Image URL</label>
             </div>
         </div>
+        <!--ADD RECIPE SUBMIT BUTTON-->
         <div class="row btn-align add_recipe_btn">
             <button class="btn waves-effect waves-light grey darken-3" type="submit" name="action">Add Recipe
                 <i class="material-icons right">playlist_add</i>
