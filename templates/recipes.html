@@ -15,7 +15,7 @@
                 <p>{{recipes.description.capitalize()}}</p>
             </div>
             <div class="card-action">
-                <a href="#">Full Recipe</a>
+                <a href="{{ url_for('full_recipe', recipes_id=recipes._id) }}">Full Recipe</a>
                 <a href="#">Edit Recipe</a>
                 <a href="#">Delete Recipe</a>
             </div>

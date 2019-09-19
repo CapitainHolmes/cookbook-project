@@ -50,6 +50,13 @@ def insert_recipe():
     recipes = mongo.db.recipes
     recipes.insert_one(recipe)
     return redirect(url_for('recipes'))
+    
+@app.route('/full_recipe/<recipes_id>')
+def full_recipe(recipes_id):
+    the_full_recipe = mongo.db.recipes.find_one({"_id": ObjectId(recipes_id)})
+    all_cuisines = mongo.db.cuisines.find()
+    return render_template('fullrecipe.html', recipes=the_full_recipe, cuisines=all_cuisines)
+
 
 if __name__ == '__main__':
     app.run(host=os.environ.get('IP'),
