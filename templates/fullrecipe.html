@@ -3,10 +3,11 @@
 
 <h2>Full Recipe - {{recipes.name.title()}}</h2>
 
-<div class="full_recipe_info">
+<div>
     <div class="row">
         <img class="full_recipe_image col m6" src="{{recipes.recipe_image}}">
-        <div class="col m6">
+        <div class="full_recipe_ingredients col m6">
+            <h4>Cuisine - {{recipes.cuisine.capitalize()}}</h4>
             <h4>Ingredients</h4>
             <p>{{recipes.ingredient_1.capitalize()}}</p>
             <p>{{recipes.ingredient_2.capitalize()}}</p>
@@ -21,7 +22,7 @@
         </div>
     </div>
 
-    <div class="row recipe_ingredients">
+    <div class="row full_recipe_method">
         <div class="recipe_method col m6">
             <h4>Method One</h4>
             <p>{{recipes.method_part_one.capitalize()}}</p>
@@ -29,6 +30,14 @@
             <p>{{recipes.method_part_two.capitalize()}}</p>
             <h4>Method Three</h4>
             <p>{{recipes.method_part_three.capitalize()}}</p>
+        </div>
+        <div class="full_recipe_info col m6">
+            <h4>Cook Time</h4>
+            <p>{{recipes.cook_time}} Minutes</p>
+            <h4>Difficulty</h4>
+            <p>{{recipes.difficulty}}</p>
+            <h4>People it Serves</h4>
+            <p>{{recipes.serves}}</p>
         </div>
     </div>
 </div>

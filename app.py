@@ -28,7 +28,7 @@ def insert_recipe():
             'name': request.form.get('name'),
             'cuisine': request.form.get('cuisine'),
             'cook_time': request.form.get('cook_time'),
-            'sevres': request.form.get('serves'),
+            'serves': request.form.get('serves'),
             'difficulty': request.form.get('difficulty'),
             'description': request.form.get('description'),
             'ingredient_1': request.form.get('ingredient_1'),

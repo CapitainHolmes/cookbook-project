@@ -6,6 +6,13 @@
 
 /*FULL RECIPES PAGE*/
 
+.full_recipe_ingredients {
+    text-align: center;
+}
+
+.full_recipe_info {
+    text-align: center;
+}
 
 /*ADD RECIPES PAGE*/
 
