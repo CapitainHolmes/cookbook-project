@@ -9,10 +9,8 @@
         <div class="full_recipe_ingredients col m6">
             <h4>Cuisine - {{recipes.cuisine.capitalize()}}</h4>
             <h4>Ingredients</h4>
-            {% for recipe in recipes %}
             {% for ingredient in recipes.ingredients %}
                 <p>{{ingredient}}</p>
-            {% endfor %}
             {% endfor %}
         </div>
     </div>
