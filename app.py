@@ -31,20 +31,10 @@ def insert_recipe():
             'serves': request.form.get('serves'),
             'difficulty': request.form.get('difficulty'),
             'description': request.form.get('description'),
-            'ingredient_1': request.form.get('ingredient_1'),
-            'ingredient_2': request.form.get('ingredient_2'),
-            'ingredient_3': request.form.get('ingredient_3'),
-            'ingredient_4': request.form.get('ingredient_4'),
-            'ingredient_5': request.form.get('ingredient_5'),
-            'ingredient_6': request.form.get('ingredient_6'),
-            'ingredient_7': request.form.get('ingredient_7'),
-            'ingredient_8': request.form.get('ingredient_8'),
-            'ingredient_9': request.form.get('ingredient_9'),
-            'ingredient_10': request.form.get('ingredient_10'),
+            'ingredients': request.form.getlist('ingredients'),
             'method_part_one': request.form.get('method_part_one'),
             'method_part_two': request.form.get('method_part_two'),
             'method_part_three': request.form.get('method_part_three'),
-            'tags': request.form.getlist('tags'),
             'recipe_image': request.form.get('recipe_image')
             }
     recipes = mongo.db.recipes
