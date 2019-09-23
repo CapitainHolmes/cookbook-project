@@ -9,16 +9,9 @@
         <div class="full_recipe_ingredients col m6">
             <h4>Cuisine - {{recipes.cuisine.capitalize()}}</h4>
             <h4>Ingredients</h4>
-            <p>{{recipes.ingredient_1.capitalize()}}</p>
-            <p>{{recipes.ingredient_2.capitalize()}}</p>
-            <p>{{recipes.ingredient_3.capitalize()}}</p>
-            <p>{{recipes.ingredient_4.capitalize()}}</p>
-            <p>{{recipes.ingredient_5.capitalize()}}</p>
-            <p>{{recipes.ingredient_6.capitalize()}}</p>
-            <p>{{recipes.ingredient_7.capitalize()}}</p>
-            <p>{{recipes.ingredient_8.capitalize()}}</p>
-            <p>{{recipes.ingredient_9.capitalize()}}</p>
-            <p>{{recipes.ingredient_10.capitalize()}}</p>
+            {% for ingredient in recipes %}
+            <p>{{recipes.ingredient|e}}</p>
+            {% endfor %}
         </div>
     </div>
 
