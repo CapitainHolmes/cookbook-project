@@ -1,7 +1,7 @@
 {% extends 'base.html' %} {% block content %}
 
 
-<h2>Full Recipe - {{recipes.name.title()}}</h2>
+<h2 class="full_recipe_title">Full Recipe - {{recipes.name.title()}}</h2>
 
 <div>
     <div class="row">
@@ -9,16 +9,11 @@
         <div class="full_recipe_ingredients col m6">
             <h4>Cuisine - {{recipes.cuisine.capitalize()}}</h4>
             <h4>Ingredients</h4>
-            <p>{{recipes.ingredient_1.capitalize()}}</p>
-            <p>{{recipes.ingredient_2.capitalize()}}</p>
-            <p>{{recipes.ingredient_3.capitalize()}}</p>
-            <p>{{recipes.ingredient_4.capitalize()}}</p>
-            <p>{{recipes.ingredient_5.capitalize()}}</p>
-            <p>{{recipes.ingredient_6.capitalize()}}</p>
-            <p>{{recipes.ingredient_7.capitalize()}}</p>
-            <p>{{recipes.ingredient_8.capitalize()}}</p>
-            <p>{{recipes.ingredient_9.capitalize()}}</p>
-            <p>{{recipes.ingredient_10.capitalize()}}</p>
+            {% for recipe in recipes %}
+            {% for ingredient in recipes.ingredients %}
+                <p>{{ingredient}}</p>
+            {% endfor %}
+            {% endfor %}
         </div>
     </div>
 
@@ -32,12 +27,9 @@
             <p>{{recipes.method_part_three.capitalize()}}</p>
         </div>
         <div class="full_recipe_info col m6">
-            <h4>Cook Time</h4>
-            <p>{{recipes.cook_time}} Minutes</p>
-            <h4>Difficulty</h4>
-            <p>{{recipes.difficulty}}</p>
-            <h4>People it Serves</h4>
-            <p>{{recipes.serves}}</p>
+            <h5>Cook Time: {{recipes.cook_time}}</h5>
+            <h5>Difficulty: {{recipes.difficulty}}</h5>
+            <h5>People it Serves: {{recipes.serves}}</h5>
         </div>
     </div>
 </div>

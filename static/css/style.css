@@ -6,6 +6,15 @@
 
 /*FULL RECIPES PAGE*/
 
+.full_recipe_title{
+    padding-bottom: 50px;
+}
+
+.full_recipe_image {
+    max-height: 500px;
+    max-width: 500px;
+}
+
 .full_recipe_ingredients {
     text-align: center;
 }
