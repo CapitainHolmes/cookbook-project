@@ -48,6 +48,12 @@ def full_recipe(recipes_id):
     return render_template('fullrecipe.html', recipes=the_full_recipe, cuisines=all_cuisines)
 
 
+@app.route('/delete_recipe/<recipes_id>')
+def delete_recipe(recipes_id):
+    mongo.db.recipes.remove({"_id": ObjectId(recipes_id)})
+    return redirect(url_for('recipes'))
+
+
 if __name__ == '__main__':
     app.run(host=os.environ.get('IP'),
             port=int(os.environ.get('PORT')),
