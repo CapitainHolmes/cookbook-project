@@ -52,6 +52,13 @@ def full_recipe(recipes_id):
 def delete_recipe(recipes_id):
     mongo.db.recipes.remove({"_id": ObjectId(recipes_id)})
     return redirect(url_for('recipes'))
+    
+    
+@app.route('/edit_recipe/<recipes_id>')
+def edit_recipe(recipes_id):
+    the_recipe = mongo.db.recipes.find_one({"_id": ObjectId(recipes_id)})
+    all_cuisines = mongo.db.cuisines.find()
+    return render_template('editrecipe.html', recipes=the_recipe, cuisines=all_cuisines)
 
 
 if __name__ == '__main__':

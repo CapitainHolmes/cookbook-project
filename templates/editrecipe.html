@@ -1,9 +1,9 @@
 {% extends 'base.html' %} {% block content %}
 
-<h2>Add Recipe</h2>
+<h2>Edit Recipe</h2>
 
 <div class="row">
-    <form id='myform' action="{{ url_for('insert_recipe') }}" method="POST" class="col s12">
+    <form action="{{ url_for('edit_recipe') }}" method="POST" class="col s12">
         <div class="row">
             <div class="row">
                 <!--CUISINE MULTIPLE SELECT-->
@@ -67,6 +67,7 @@
                 <label for="icon_telephone">Recipe Description</label>
             </div>
         </div>
+        <div class="row">
             <!--INGREDIENTS-->
             <div class="row">
                 <div class="s6 add_recipe_sub_head">
@@ -140,6 +141,7 @@
                 <textarea name="recipe_image" id="recipe_image" class="materialize-textarea"></textarea>
                 <label for="icon_telephone">Please Add the Recipe Image URL</label>
             </div>
+        </div>
         <!--ADD RECIPE SUBMIT BUTTON-->
         <div class="row btn-align add_recipe_btn">
             <button class="btn waves-effect waves-light grey darken-3" type="submit" name="action">Add Recipe
