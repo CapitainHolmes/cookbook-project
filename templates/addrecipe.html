@@ -17,7 +17,8 @@
                 </select>
                     <label>Recipe Cuisines</label>
                 </div>
-                <div class="s6">
+                <div class="col s6 add_cuisine">
+                    <h5>Is your cuisine not there? Then Create one! <a href="{{ url_for('add_cuisine_page') }}">Here.</a></h5>
                 </div>
             </div>
             <!--RECIPE NAME-->
@@ -67,79 +68,79 @@
                 <label for="icon_telephone">Recipe Description</label>
             </div>
         </div>
-            <!--INGREDIENTS-->
-            <div class="row">
-                <div class="s6 add_recipe_sub_head">
-                    <h5>Ingredients & Method Guide</h5>
-                </div>
+        <!--INGREDIENTS-->
+        <div class="row">
+            <div class="s6 add_recipe_sub_head">
+                <h5>Ingredients & Method Guide</h5>
             </div>
-            <div class="row">
-                <div class="input-field col s6 m3">
-                    <input id="ingredients" name="ingredients" type="text">
-                    <label for="icon_prefix">First Ingredient</label>
-                </div>
-                <div class="input-field col s6 m3">
-                    <input id="ingredients" name="ingredients" type="text">
-                    <label for="icon_prefix">Second Ingredient</label>
-                </div>
-                <div class="input-field col s6 m3">
-                    <input id="ingredients" name="ingredients" type="text">
-                    <label for="icon_prefix">Third Ingredient</label>
-                </div>
-                <div class="input-field col s6 m3">
-                    <input id="ingredients" name="ingredients" type="text">
-                    <label for="icon_prefix">Fourth Ingredient</label>
-                </div>
+        </div>
+        <div class="row">
+            <div class="input-field col s6 m3">
+                <input id="ingredients" name="ingredients" type="text">
+                <label for="icon_prefix">First Ingredient</label>
             </div>
-            <div class="row">
-                <div class="input-field col s6 m3">
-                    <input id="ingredients" name="ingredients" type="text">
-                    <label for="icon_prefix">Fifth Ingredient</label>
-                </div>
-                <div class="input-field col s6 m3">
-                    <input id="ingredients" name="ingredients" type="text">
-                    <label for="icon_prefix">Sixth Ingredient</label>
-                </div>
-                <div class="input-field col s6 m3">
-                    <input id="ingredients" name="ingredients" type="text">
-                    <label for="icon_prefix">Seventh Ingredient</label>
-                </div>
-                <div class="input-field col s6 m3">
-                    <input id="ingredients" name="ingredients" type="text">
-                    <label for="icon_prefix">Eighth Ingredient</label>
-                </div>
+            <div class="input-field col s6 m3">
+                <input id="ingredients" name="ingredients" type="text">
+                <label for="icon_prefix">Second Ingredient</label>
             </div>
-            <div class="row">
-                <div class="input-field col s6">
-                    <input id="ingredients" name="ingredients" type="text">
-                    <label for="icon_prefix">Ninth Ingredient</label>
-                </div>
-                <div class="input-field col s6">
-                    <input id="ingredients" name="ingredients" type="text">
-                    <label for="icon_prefix">Tenth Ingredient</label>
-                </div>
+            <div class="input-field col s6 m3">
+                <input id="ingredients" name="ingredients" type="text">
+                <label for="icon_prefix">Third Ingredient</label>
             </div>
-            <!--METHOD GUIDE-->
-            <div class="row">
-                <div class="input-field col s12 m4">
-                    <textarea name="method_part_one" id="method_part_one" class="materialize-textarea"></textarea>
-                    <label for="icon_telephone">Method Step One</label>
-                </div>
-                <div class="input-field col s12 m4">
-                    <textarea name="method_part_two" id="method_part_two" class="materialize-textarea"></textarea>
-                    <label for="icon_telephone">Method Step Two</label>
-                </div>
-                <div class="input-field col s12 m4">
-                    <textarea name="method_part_three" id="method_part_three" class="materialize-textarea"></textarea>
-                    <label for="icon_telephone">Method Three Three</label>
-                </div>
+            <div class="input-field col s6 m3">
+                <input id="ingredients" name="ingredients" type="text">
+                <label for="icon_prefix">Fourth Ingredient</label>
             </div>
-            <!--ADD RECIPE IMAGE URL-->
-            <div class="input-field col s12">
-                <i class="material-icons prefix">insert_photo</i>
-                <textarea name="recipe_image" id="recipe_image" class="materialize-textarea"></textarea>
-                <label for="icon_telephone">Please Add the Recipe Image URL</label>
+        </div>
+        <div class="row">
+            <div class="input-field col s6 m3">
+                <input id="ingredients" name="ingredients" type="text">
+                <label for="icon_prefix">Fifth Ingredient</label>
             </div>
+            <div class="input-field col s6 m3">
+                <input id="ingredients" name="ingredients" type="text">
+                <label for="icon_prefix">Sixth Ingredient</label>
+            </div>
+            <div class="input-field col s6 m3">
+                <input id="ingredients" name="ingredients" type="text">
+                <label for="icon_prefix">Seventh Ingredient</label>
+            </div>
+            <div class="input-field col s6 m3">
+                <input id="ingredients" name="ingredients" type="text">
+                <label for="icon_prefix">Eighth Ingredient</label>
+            </div>
+        </div>
+        <div class="row">
+            <div class="input-field col s6">
+                <input id="ingredients" name="ingredients" type="text">
+                <label for="icon_prefix">Ninth Ingredient</label>
+            </div>
+            <div class="input-field col s6">
+                <input id="ingredients" name="ingredients" type="text">
+                <label for="icon_prefix">Tenth Ingredient</label>
+            </div>
+        </div>
+        <!--METHOD GUIDE-->
+        <div class="row">
+            <div class="input-field col s12 m4">
+                <textarea name="method_part_one" id="method_part_one" class="materialize-textarea"></textarea>
+                <label for="icon_telephone">Method Step One</label>
+            </div>
+            <div class="input-field col s12 m4">
+                <textarea name="method_part_two" id="method_part_two" class="materialize-textarea"></textarea>
+                <label for="icon_telephone">Method Step Two</label>
+            </div>
+            <div class="input-field col s12 m4">
+                <textarea name="method_part_three" id="method_part_three" class="materialize-textarea"></textarea>
+                <label for="icon_telephone">Method Three Three</label>
+            </div>
+        </div>
+        <!--ADD RECIPE IMAGE URL-->
+        <div class="input-field col s12">
+            <i class="material-icons prefix">insert_photo</i>
+            <textarea name="recipe_image" id="recipe_image" class="materialize-textarea"></textarea>
+            <label for="icon_telephone">Please Add the Recipe Image URL</label>
+        </div>
         <!--ADD RECIPE SUBMIT BUTTON-->
         <div class="row btn-align add_recipe_btn">
             <button class="btn waves-effect waves-light grey darken-3" type="submit" name="action">Add Recipe

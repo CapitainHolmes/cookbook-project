@@ -80,6 +80,10 @@ def update_recipe(recipes_id):
     return redirect(url_for('recipes'))
     
 
+@app.route('/add_cuisine_page')
+def add_cuisine_page():
+    return render_template('addcuisine.html')
+
 
 if __name__ == '__main__':
     app.run(host=os.environ.get('IP'),
