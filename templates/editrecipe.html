@@ -27,7 +27,7 @@
             <!--RECIPE NAME-->
             <div class="input-field col s12">
                 <i class="material-icons prefix">restaurant</i>
-                <input id="name" name="name" type="text">
+                <input id="name" name="name" type="text" value="{{recipes.name}}">
                 <label for="icon_prefix">Recipe Name</label>
             </div>
         </div>
@@ -35,14 +35,15 @@
         <div class="row">
             <div class="input-field col s12">
                 <i class="material-icons prefix">alarm</i>
-                <input id="cook_time" name="cook_time" type="text">
+                <input id="cook_time" name="cook_time" type="text" value="{{recipes.cook_time}}">
                 <label for="icon_prefix">Cook Time in Minutes</label>
             </div>
             <!--SERVES MULTIPLE SELECT-->
             <div class="input-field col s12">
                 <i class="material-icons prefix">filter_1</i>
-                <select id="cuisine" name="cuisine">
+                <select id="serves" name="serves">
                   <option value="" disabled selected>Select How Many</option>
+                  <option value="{{recipes.serves}}"selected>{{recipes.serves}}</option>
                     <option value="One">One</option>
                     <option value="Two">Two</option>
                     <option value="Three">Three</option>
@@ -58,6 +59,7 @@
                 <i class="material-icons prefix">equalizer</i>
                 <select id="difficulty" name="difficulty">
                   <option value="" disabled selected>Select The Difficulty</option>
+                  <option value="{{recipes.difficulty}}" selected >{{recipes.difficulty}}</option>
                     <option value="Easy">Easy</option>
                     <option value="Medium">Medium</option>
                     <option value="Hard">Hard</option>
@@ -67,7 +69,7 @@
             <!--RECIPE DESCRIPTION-->
             <div class="input-field col s12">
                 <i class="material-icons prefix">subject</i>
-                <textarea name="description" id="description" class="materialize-textarea"></textarea>
+                <textarea name="description" id="description" class="materialize-textarea" value="{{recipes.description}}">{{recipes.description}}</textarea>
                 <label for="icon_telephone">Recipe Description</label>
             </div>
         </div>
@@ -80,75 +82,75 @@
             </div>
             <div class="row">
                 <div class="input-field col s6 m3">
-                    <input id="ingredients" name="ingredients" type="text">
+                    <input id="ingredients" name="ingredients" type="text" value="{{recipes.ingredients[0]}}">
                     <label for="icon_prefix">First Ingredient</label>
                 </div>
                 <div class="input-field col s6 m3">
-                    <input id="ingredients" name="ingredients" type="text">
+                    <input id="ingredients" name="ingredients" type="text" value="{{recipes.ingredients[1]}}">
                     <label for="icon_prefix">Second Ingredient</label>
                 </div>
                 <div class="input-field col s6 m3">
-                    <input id="ingredients" name="ingredients" type="text">
+                    <input id="ingredients" name="ingredients" type="text" value="{{recipes.ingredients[2]}}">
                     <label for="icon_prefix">Third Ingredient</label>
                 </div>
                 <div class="input-field col s6 m3">
-                    <input id="ingredients" name="ingredients" type="text">
+                    <input id="ingredients" name="ingredients" type="text" value="{{recipes.ingredients[3]}}">
                     <label for="icon_prefix">Fourth Ingredient</label>
                 </div>
             </div>
             <div class="row">
                 <div class="input-field col s6 m3">
-                    <input id="ingredients" name="ingredients" type="text">
+                    <input id="ingredients" name="ingredients" type="text" value="{{recipes.ingredients[4]}}">
                     <label for="icon_prefix">Fifth Ingredient</label>
                 </div>
                 <div class="input-field col s6 m3">
-                    <input id="ingredients" name="ingredients" type="text">
+                    <input id="ingredients" name="ingredients" type="text" value="{{recipes.ingredients[5]}}">
                     <label for="icon_prefix">Sixth Ingredient</label>
                 </div>
                 <div class="input-field col s6 m3">
-                    <input id="ingredients" name="ingredients" type="text">
+                    <input id="ingredients" name="ingredients" type="text" value="{{recipes.ingredients[6]}}">
                     <label for="icon_prefix">Seventh Ingredient</label>
                 </div>
                 <div class="input-field col s6 m3">
-                    <input id="ingredients" name="ingredients" type="text">
+                    <input id="ingredients" name="ingredients" type="text" value="{{recipes.ingredients[7]}}">
                     <label for="icon_prefix">Eighth Ingredient</label>
                 </div>
             </div>
             <div class="row">
                 <div class="input-field col s6">
-                    <input id="ingredients" name="ingredients" type="text">
+                    <input id="ingredients" name="ingredients" type="text" value="{{recipes.ingredients[8]}}">
                     <label for="icon_prefix">Ninth Ingredient</label>
                 </div>
                 <div class="input-field col s6">
-                    <input id="ingredients" name="ingredients" type="text">
+                    <input id="ingredients" name="ingredients" type="text" value="{{recipes.ingredients[9]}}">
                     <label for="icon_prefix">Tenth Ingredient</label>
                 </div>
             </div>
             <!--METHOD GUIDE-->
             <div class="row">
                 <div class="input-field col s12 m4">
-                    <textarea name="method_part_one" id="method_part_one" class="materialize-textarea"></textarea>
+                    <textarea name="method_part_one" id="method_part_one" class="materialize-textarea">{{recipes.method_part_one}}</textarea>
                     <label for="icon_telephone">Method Step One</label>
                 </div>
                 <div class="input-field col s12 m4">
-                    <textarea name="method_part_two" id="method_part_two" class="materialize-textarea"></textarea>
+                    <textarea name="method_part_two" id="method_part_two" class="materialize-textarea">{{recipes.method_part_two}}</textarea>
                     <label for="icon_telephone">Method Step Two</label>
                 </div>
                 <div class="input-field col s12 m4">
-                    <textarea name="method_part_three" id="method_part_three" class="materialize-textarea"></textarea>
+                    <textarea name="method_part_three" id="method_part_three" class="materialize-textarea">{{recipes.method_part_three}}</textarea>
                     <label for="icon_telephone">Method Three Three</label>
                 </div>
             </div>
             <!--ADD RECIPE IMAGE URL-->
             <div class="input-field col s12">
                 <i class="material-icons prefix">insert_photo</i>
-                <textarea name="recipe_image" id="recipe_image" class="materialize-textarea"></textarea>
+                <textarea name="recipe_image" id="recipe_image" class="materialize-textarea">{{recipes.recipe_image}}</textarea>
                 <label for="icon_telephone">Please Add the Recipe Image URL</label>
             </div>
         </div>
         <!--ADD RECIPE SUBMIT BUTTON-->
         <div class="row btn-align add_recipe_btn">
-            <button class="btn waves-effect waves-light grey darken-3" type="submit" name="action">Add Recipe
+            <button class="btn waves-effect waves-light grey darken-3" type="submit" name="action">Edit Recipe
                 <i class="material-icons right">playlist_add</i>
              </button>
         </div>
