@@ -78,11 +78,19 @@ def update_recipe(recipes_id):
         'recipe_image': request.form.get('recipe_image')
     })
     return redirect(url_for('recipes'))
-    
 
 @app.route('/add_cuisine_page')
 def add_cuisine_page():
     return render_template('addcuisine.html')
+
+@app.route('/add_cuisine', methods=['POST'])
+def add_cuisine():
+    cuisine = {
+            'cuisine': request.form.get('cuisine')
+    }
+    cuisines = mongo.db.cuisines
+    cuisines.insert_one(cuisine)
+    return redirect(url_for('add_recipe'))
 
 
 if __name__ == '__main__':
