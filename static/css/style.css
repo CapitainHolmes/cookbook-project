@@ -1,6 +1,11 @@
 body {
     padding-bottom: 150px;
 }
+/*INDEX PAGE*/
+
+.index_content {
+    text-align: center;
+}
 
 /*RECIPES PAGE*/
 

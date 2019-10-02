@@ -23,7 +23,7 @@ cuisine.
 - As a User I want the application to be easily accessible and visually pleasing.
 - As a User I want to see a step by step guide on how to make the meals.
 - As a User I want to see how difficult recipes are to make.
-- As a User I want to be able to see everything needed in order to make the meals correctly such as, required tools, time length and ingredients.
+- As a User I want to be able to see everything needed in order to make the meals correctly such as time length and ingredients.
 
 ## FEATURES
 
@@ -70,7 +70,7 @@ cuisine.
 ** .**
 - "As a User I want to see how difficult recipes are to make."
 ** .**
-- "As a User I want to be able to see everything needed in order to make the meals correctly such as, required tools, time length and ingredients."
+- "As a User I want to be able to see everything needed in order to make the meals correctly such as time length and ingredients."
 ** .**
 
 ## DEPLOYMENT
