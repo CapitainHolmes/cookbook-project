@@ -30,15 +30,26 @@ cuisine.
 ### Features Used in This Project:
 
 - Able to search for a specific cuisine.
-- View the step by step guide on how to make the recipes. 
+- View the step by step guide on how to make the recipes.
+- View the full list of ingredients needed to cook the recipe.
+- See other bits of useful information about the recipe which include, cook time, how many people it serves and the difficulty level.
 - A dropdown navigation bar for smaller sized screens.
-- Able to Add, Edit and remove recipes.
+- Able to add you're own recipe with image.
+- Ability to edit an existing recipe.
+- Able to delete unwanted recipes.
 
 ## TECHNOLOGIES
 
 ### The Technologies I Have Used:
 
 - **[Moq Ups](https://app.moqups.com/)** - I have used MoqUps to create the mockup version of my website, that can be found **[Here.](https://github.com/CapitainHolmes/cookbook-project/tree/master/mock--ups)**
+- **[HTML5](https://en.wikipedia.org/wiki/HTML5)** - I have used HTML5 to create the base of my project.
+- **[Materialize](https://materializecss.com/)** - I have used Materialize for it's frontend frameworks for the style and layout of my project.
+- **[CSS](https://en.wikipedia.org/wiki/Cascading_Style_Sheets)** - I have used CSS3 for myy custom styles for certain things in my project.
+- **[jQuery](https://en.wikipedia.org/wiki/JQuery)** - I have used jQuery to simplify my JavaScript.
+- **[MongoDB](https://www.mongodb.com/)** - I have used MongoDB for my database to store all the recipe data.
+- **[Python 3](https://www.python.org/)** - I have used Python 3 for the backend of my project along with the **[Flask Framework](https://en.wikipedia.org/wiki/Flask_(web_framework))**.
+- **[Jinja2]()** - I have used Jinja2 for it's templating language so that i'm not repeating unnecessary code.
 
 ## TESTING
 
@@ -48,11 +59,11 @@ cuisine.
 - "As a User I want to be able to search for a specific recipe based on the cuisine." 
 ** .**
 - "As a User I want the ability to add reicpes to the application." 
-** .**
+** This was tested by me by filling out a test recipe in the form provided on the Add Recipe page.**
 - "As a User I want the ability to edit recipes on the application."
-** .**
+** This was tested by clicking the edit recipe button on a test recipe card on the recipes page and then updating it with new details.**
 - "As a User I want the ability to remove recipes from the application."
-** .**
+** This was tested by selecting the delete recipe button on a test recipe card on the recipes page and successfully removing the test recipe.**
 - "As a User I want the application to be easily accessible and visually pleasing."
 ** .**
 - "As a User I want to see a step by step guide on how to make the meals."
@@ -64,6 +75,12 @@ cuisine.
 
 ## DEPLOYMENT
 
+Throughout the course of this project I have been commiting every finished functionality, 
+every bug fix and things I thought needed removing, to GitHub using **[Version Control.](https://git-scm.com/book/en/v2/Getting-Started-About-Version-Control)**
+
+All my commits and the full code for my project can be found on my GitHub Repository which can be found **[Here.](https://github.com/CapitainHolmes/cookbook-project)** 
+
+I have also commited all my work to 
 
 ## CREDIT
 
