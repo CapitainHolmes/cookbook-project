@@ -57,21 +57,21 @@ cuisine.
 ### User Stories Testing
 
 - "As a User I want to be able to search for a specific recipe based on the cuisine." 
-** .**
+**.**
 - "As a User I want the ability to add reicpes to the application." 
-** This was tested by me by filling out a test recipe in the form provided on the Add Recipe page.**
+**This was tested by me by filling out a test recipe in the form provided on the Add Recipe page.**
 - "As a User I want the ability to edit recipes on the application."
-** This was tested by clicking the edit recipe button on a test recipe card on the recipes page and then updating it with new details.**
+**This was tested by clicking the edit recipe button on a test recipe card on the recipes page and then updating it with new details.**
 - "As a User I want the ability to remove recipes from the application."
-** This was tested by selecting the delete recipe button on a test recipe card on the recipes page and successfully removing the test recipe.**
+**This was tested by selecting the delete recipe button on a test recipe card on the recipes page and successfully removing the test recipe.**
 - "As a User I want the application to be easily accessible and visually pleasing."
-** .**
+**.**
 - "As a User I want to see a step by step guide on how to make the meals."
-** .**
+**.**
 - "As a User I want to see how difficult recipes are to make."
-** .**
+**.**
 - "As a User I want to be able to see everything needed in order to make the meals correctly such as time length and ingredients."
-** .**
+**.**
 
 ## DEPLOYMENT
 
