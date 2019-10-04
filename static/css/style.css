@@ -9,6 +9,11 @@ body {
 
 /*RECIPES PAGE*/
 
+.card {
+    height: 550px;
+    width: 300px;
+}
+
 .card-action {
     font-size: 13px;
 }
