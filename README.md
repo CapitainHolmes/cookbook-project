@@ -14,6 +14,9 @@ The User will be able to see how long it takes to cook a specific recipe, what i
 a specific recipe and what tags are associated with a recipe. The User will also be able to search for a specific recipe based on it's 
 cuisine.
 
+- I made some mockups before starting this project to get an idea of what my application could look like when it's fully complete, these can be found **[Here.](https://github.com/CapitainHolmes/cookbook-project/tree/master/mock--ups)**
+
+
 ### User Stories:
 
 - As a User I want to be able to search for a specific recipe based on the cuisine.
@@ -59,19 +62,19 @@ cuisine.
 - "As a User I want to be able to search for a specific recipe based on the cuisine." 
 **.**
 - "As a User I want the ability to add reicpes to the application." 
-**This was tested by me by filling out a test recipe in the form provided on the Add Recipe page.**
+**This was tested by me by first, filling out a test recipe in the form provided on the Add Recipe page. Then selecting the Add Recipe button located at the bottom of the form, which then returned me to the Recipe page where my new test recipe was visable and was successfully added to the database.**
 - "As a User I want the ability to edit recipes on the application."
 **This was tested by clicking the edit recipe button on a test recipe card on the recipes page and then updating it with new details.**
 - "As a User I want the ability to remove recipes from the application."
-**This was tested by selecting the delete recipe button on a test recipe card on the recipes page and successfully removing the test recipe.**
+**This was tested by selecting the delete recipe button on a test recipe on the Full Recipes page and successfully removing the test recipe from the application and the database.**
 - "As a User I want the application to be easily accessible and visually pleasing."
-**.**
+**This was tested by my friends and family who used the application, which they all said that they had no problems locating the necessary things on the application.**
 - "As a User I want to see a step by step guide on how to make the meals."
-**.**
+**This was tested by first, selecting the Full Recipe button on a recipes card on the recipes page, which then redirected me to a page where I could see underneath the image was the 3 step guide on how to make the recipe.**
 - "As a User I want to see how difficult recipes are to make."
-**.**
+**This was also tested by selecting the Full Recipe button on a recipes card on the recipes page, which then revealed the difficulty level of that recipe.**
 - "As a User I want to be able to see everything needed in order to make the meals correctly such as time length and ingredients."
-**.**
+**This was also tested by selecting the Full Recipe button on a recipes card on the recipes page. The rest of the necessary information was also rendered straight from the database and I could see a list of ingredients, as well as the cook time and how many people that recipe serves.**
 
 ## DEPLOYMENT
 
