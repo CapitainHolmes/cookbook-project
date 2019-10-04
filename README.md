@@ -52,10 +52,20 @@ cuisine.
 - **[jQuery](https://en.wikipedia.org/wiki/JQuery)** - I have used jQuery to simplify my JavaScript.
 - **[MongoDB](https://www.mongodb.com/)** - I have used MongoDB for my database to store all the recipe data.
 - **[Python 3](https://www.python.org/)** - I have used Python 3 for the backend of my project along with the **[Flask Framework](https://en.wikipedia.org/wiki/Flask_(web_framework))**.
-- **[Jinja2]()** - I have used Jinja2 for it's templating language so that i'm not repeating unnecessary code.
+- **[Jinja2](https://jinja.palletsprojects.com/en/2.10.x/)** - I have used Jinja2 for it's templating language so that i'm not repeating unnecessary code.
+- **[Heroku](https://en.wikipedia.org/wiki/Heroku)** - I have used Heroku to deploy my application.
 
 ## TESTING
 
+I conducted tests on a wide selction of browsers/devices to ensure User's can successfully use the site and it's features.
+
+Tests conducted:
+
+- I was forever checking the logs in the Terminal and Heroku to see that there were no errors and the application was not broken. This I found really useful for debugging issues as it states specifically where the problem is.
+- Making sure the code runs wihtout issues using the **[Google Chrome Inspect](https://developers.google.com/web/tools/chrome-devtools/shortcuts)** Tools.
+Inside Chromes Dev Tools I can:
+    - Check the responsiveness for individual phones and screens, example, an IPhone/Samsung.
+    - I can also change and adapt my code inside the Tools, to see what works and what doesn't. Also staying aware that these changes I make are not permenant.
 
 ### User Stories Testing
 
@@ -76,6 +86,14 @@ cuisine.
 - "As a User I want to be able to see everything needed in order to make the meals correctly such as time length and ingredients."
 **This was also tested by selecting the Full Recipe button on a recipes card on the recipes page. The rest of the necessary information was also rendered straight from the database and I could see a list of ingredients, as well as the cook time and how many people that recipe serves.**
 
+
+Here is a list of each Validator used to check my code:
+
+- **[W3C HTML](https://validator.w3.org/)**
+- **[W3C CSS3](https://jigsaw.w3.org/css-validator/)**
+
+
+
 ## DEPLOYMENT
 
 Throughout the course of this project I have been commiting every finished functionality, 
@@ -83,12 +101,18 @@ every bug fix and things I thought needed removing, to GitHub using **[Version C
 
 All my commits and the full code for my project can be found on my GitHub Repository which can be found **[Here.](https://github.com/CapitainHolmes/cookbook-project)** 
 
-I have also commited all my work to 
+I have also commited and deployed my work to Heroku, which can be found **[here](https://cookbook-database-project.herokuapp.com/)**
 
 ## CREDIT
 
-
 ### Content
 
+The content used in this project was all sourced from the **[BBC GoodFood](https://www.bbcgoodfood.com/)** site. This includes the recipes name, indgredients, 
+the full recipe, the recipes image and pretty much everything associated with the recipe including the image.
 
 ## ACKNOWLEDGEMENTS
+
+I recieved inspiration for this project from:
+
+- Friends.
+- My Mentor Juan.

@@ -9,6 +9,10 @@ body {
 
 /*RECIPES PAGE*/
 
+.card_div {
+    padding: 25px;
+}
+
 .card {
     height: 550px;
     width: 300px;
