@@ -11,15 +11,13 @@ recipe fields. Provide results of the recipes that is easily accessible and visu
 
 This application gives Users the ability to browse through other peoples recipes, edit them, remove them and to add their own if they so choose.
 The User will be able to see how long it takes to cook a specific recipe, what ingredients are used, the step by step guide on how to make
-a specific recipe and what tags are associated with a recipe. The User will also be able to search for a specific recipe based on it's 
-cuisine.
+a specific recipe and what tags are associated with a recipe.
 
 - I made some mockups before starting this project to get an idea of what my application could look like when it's fully complete, these can be found **[Here.](https://github.com/CapitainHolmes/cookbook-project/tree/master/mock--ups)**
 
 
 ### User Stories:
 
-- As a User I want to be able to search for a specific recipe based on the cuisine.
 - As a User I want the ability to add reicpes to the application.
 - As a User I want the ability to edit recipes on the application.
 - As a User I want the ability to remove recipes from the application.
@@ -32,7 +30,6 @@ cuisine.
 
 ### Features Used in This Project:
 
-- Able to search for a specific cuisine.
 - View the step by step guide on how to make the recipes.
 - View the full list of ingredients needed to cook the recipe.
 - See other bits of useful information about the recipe which include, cook time, how many people it serves and the difficulty level.
@@ -69,8 +66,6 @@ Inside Chromes Dev Tools I can:
 
 ### User Stories Testing
 
-- "As a User I want to be able to search for a specific recipe based on the cuisine." 
-**.**
 - "As a User I want the ability to add reicpes to the application." 
 **This was tested by me by first, filling out a test recipe in the form provided on the Add Recipe page. Then selecting the Add Recipe button located at the bottom of the form, which then returned me to the Recipe page where my new test recipe was visable and was successfully added to the database.**
 - "As a User I want the ability to edit recipes on the application."
@@ -108,7 +103,7 @@ I have also commited and deployed my work to Heroku, which can be found **[here]
 ### Content
 
 The content used in this project was all sourced from the **[BBC GoodFood](https://www.bbcgoodfood.com/)** site. This includes the recipes name, indgredients, 
-the full recipe, the recipes image and pretty much everything associated with the recipe including the image.
+the full recipe and pretty much everything associated with the recipe including the image.
 
 ## ACKNOWLEDGEMENTS
 
@@ -116,3 +111,4 @@ I recieved inspiration for this project from:
 
 - Friends.
 - My Mentor Juan.
+- The BBC GoodFood Website noted above.
