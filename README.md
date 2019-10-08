@@ -97,12 +97,18 @@ Here is a list of each Validator used to check my code:
 - **[W3C CSS3](https://jigsaw.w3.org/css-validator/)**
 
 
+### Things I Changed
+
+- I started off with using the Bootstrap Framework for my project, but I didn't like the look of their forms and also wanted to change to materialize for simplicity as it is used in the course material.
+
+
 ### Things to Add or Change in the Future
 
 - Have something in place that allows users to edit the cuisine they've added because of typo mistakes.
 - Have a search functionality that allows users to search for a recipe using it's cuisine.
 - Have a contacts page for users.
 - Add social media to the application.
+- Have something in place that removes some HTML on the full recipes page if users upload a recipe with only 2 or 1 methods for cooking.
 
 
 ## DEPLOYMENT
