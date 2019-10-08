@@ -56,8 +56,13 @@ a specific recipe and what tags are associated with a recipe.
 
 I conducted tests on a wide selction of browsers/devices to ensure User's can successfully use the site and it's features.
 
-Tests conducted:
+These tests included browsers/devices:
 
+- Edge - laptop
+- Mozilla - laptop
+- Chrome - laptop and iPhone
+- Safari - iPhone
+- Internet Explorer - laptop
 - I was forever checking the logs in the Terminal and Heroku to see that there were no errors and the application was not broken. This I found really useful for debugging issues as it states specifically where the problem is.
 - Making sure the code runs wihtout issues using the **[Google Chrome Inspect](https://developers.google.com/web/tools/chrome-devtools/shortcuts)** Tools.
 Inside Chromes Dev Tools I can:
