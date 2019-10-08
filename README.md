@@ -63,6 +63,10 @@ These tests included browsers/devices:
 - Chrome - laptop and iPhone
 - Safari - iPhone
 - Internet Explorer - laptop
+
+
+### Using Heroku Logs and Chrome Dev Tools
+
 - I was forever checking the logs in the Terminal and Heroku to see that there were no errors and the application was not broken. This I found really useful for debugging issues as it states specifically where the problem is.
 - Making sure the code runs wihtout issues using the **[Google Chrome Inspect](https://developers.google.com/web/tools/chrome-devtools/shortcuts)** Tools.
 Inside Chromes Dev Tools I can:
@@ -92,6 +96,13 @@ Here is a list of each Validator used to check my code:
 - **[W3C HTML](https://validator.w3.org/)**
 - **[W3C CSS3](https://jigsaw.w3.org/css-validator/)**
 
+
+### Things to Add or Change in the Future
+
+- Have something in place that allows users to edit the cuisine they've added because of typo mistakes.
+- Have a search functionality that allows users to search for a recipe using it's cuisine.
+- Have a contacts page for users.
+- Add social media to the application.
 
 
 ## DEPLOYMENT
