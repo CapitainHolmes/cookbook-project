@@ -1,28 +1,19 @@
 body {
     padding-bottom: 150px;
 }
-/*INDEX PAGE*/
+INDEX PAGE
 
 .index_content {
     text-align: center;
 }
 
-/*RECIPES PAGE*/
-
-.card_div {
-    padding: 25px;
-}
-
-.card {
-    height: 550px;
-    width: 300px;
-}
+RECIPES PAGE
 
 .card-action {
     font-size: 13px;
 }
 
-/*FULL RECIPES PAGE*/
+FULL RECIPES PAGE
 
 .full_recipe_title{
     padding-bottom: 50px;
@@ -41,7 +32,7 @@ body {
     text-align: center;
 }
 
-/*ADD RECIPES PAGE*/
+ADD RECIPES PAGE
 
 .add_recipe_sub_head {
     text-align: center;
@@ -56,7 +47,7 @@ body {
     text-align: center;
 }
 
-/*ADD CUISINE PAGE*/
+ADD CUISINE PAGE
 
 .add_cuisine_form {
     text-align: center;
